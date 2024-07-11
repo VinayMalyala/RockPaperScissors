@@ -1,10 +1,14 @@
-let userScore = 0;
-let computerScore = 0;
 let msg = document.getElementById("msg");
 let result = document.getElementById("result");
+let reset = document.getElementById("reset");
+const userScoreElement = document.getElementById("user-score");
+const computerScoreElement = document.getElementById("computer-score");
 
 const choices = document.querySelectorAll(".choice");
 
+
+let userScore = 0;
+let computerScore = 0;
 
 const genrateComputerChoice = () => {
     let options = ["rock", "paper", "scissors"];
@@ -21,8 +25,6 @@ const drawGame = () => {
 }
 
 const updateScore = (userScore, computerScore) => {
-    const userScoreElement = document.getElementById("user-score");
-    const computerScoreElement = document.getElementById("computer-score");
     userScoreElement.innerText = userScore;
     computerScoreElement.innerText = computerScore;
 }
@@ -66,4 +68,15 @@ choices.forEach((choice) => {
         const userChoice = choice.getAttribute("id");
         playGame(userChoice);
     });
+});
+
+reset.addEventListener("click", () => {
+    console.log("Reset clicked...");
+    userScoreElement.innerText = 0;
+    computerScoreElement.innerText = 0;
+
+    msg.style.backgroundColor = "#081b31";
+    msg.innerText = "Play Your Move"
+
+    result.innerHTML = "";
 });
