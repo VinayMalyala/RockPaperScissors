@@ -73,3 +73,20 @@ h1{
     font-size: 1.4rem;
     margin-top: 2rem;
 }
+
+#reset{
+    background-color: #081b31;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block; 
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.reset-msg{
+    margin-top: 1rem;
+    text-transform: none;
+}
