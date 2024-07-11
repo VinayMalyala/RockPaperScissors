@@ -8,39 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
 
-    <!-- choices section -->
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images/rock.png" alt="">
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+
+        <!-- choices section -->
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="images/rock.png" alt="">
+            </div>
+
+            <div class="choice" id="paper">
+                <img src="images/paper.png" alt="">
+            </div>
+
+            <div class="choice" id="scissors">
+                <img src="images/scissors.png" alt="">
+            </div>
         </div>
 
-        <div class="choice" id="paper">
-            <img src="images/paper.png" alt="">
+        <!-- score board  -->
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+            <div class="score">
+                <p id="comp-score">0</p>
+                <p>Computer</p>
+            </div>
         </div>
 
-        <div class="choice" id="scissors">
-            <img src="images/scissors.png" alt="">
+        <!-- result section  -->
+        <div class="msg-container">
+            <p id="msg">Play Your Move</p>
         </div>
-    </div>
 
-    <!-- score board  -->
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You</p>
-        </div>
-        <div class="score">
-            <p id="comp-score">0</p>
-            <p>Computer</p>
-        </div>
-    </div>
+    </main>
 
-    <!-- result section  -->
-     <div class="msg-container">
-        <p id="msg">Play Your Move</p>
-     </div>
+    <footer></footer>
 
     <!-- custom js link  -->
     <script src="script.js"></script>
